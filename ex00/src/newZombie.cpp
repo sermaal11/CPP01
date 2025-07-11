@@ -1,28 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sergio <sergio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 13:07:31 by sergio            #+#    #+#             */
-/*   Updated: 2025/07/11 19:25:47 by sergio           ###   ########.fr       */
+/*   Created: 2025/07/11 18:54:45 by sergio            #+#    #+#             */
+/*   Updated: 2025/07/11 18:54:52 by sergio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
-# include <string>
-# include <iostream>
-class Zombie
-{
-    private:
-        std::string _name;
-
-    public:
-        Zombie(std::string name);   // Constructor x defecto
-        ~Zombie();                  // Destructor x defecto
-        void announce(void);
-};
-
-#endif
+#include "../include/Zombie.hpp"
