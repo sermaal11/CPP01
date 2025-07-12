@@ -4,6 +4,8 @@ CFLAGS = -g3 -Wall -Wextra -Werror -std=c++98
 
 SRC =	src/main.cpp \
 		src/Zombie.cpp \
+		src/newZombie.cpp \
+		src/randomChump.cpp \
 
 
 OBJS = $(notdir $(SRC:.cpp=.o))
