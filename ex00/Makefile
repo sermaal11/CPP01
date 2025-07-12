@@ -7,7 +7,7 @@ SRC =	src/main.cpp \
 
 
 OBJS = $(notdir $(SRC:.cpp=.o))
-OBJDIR = megaphone_objects
+OBJDIR = BraiiiiiiinnnzzzZ_objects
 
 all: $(OBJDIR) $(NAME)
 
