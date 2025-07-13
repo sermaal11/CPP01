@@ -6,7 +6,7 @@
 /*   By: sergio <sergio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 18:54:45 by sergio            #+#    #+#             */
-/*   Updated: 2025/07/12 18:26:16 by sergio           ###   ########.fr       */
+/*   Updated: 2025/07/13 19:39:55 by sergio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 Zombie* newZombie(std::string name)
 {
-    return new Zombie(name); // Se crea en el HEAP
+    Zombie* zombiePtr;				// 1. Declaramos un puntero a Zombie
+    zombiePtr = new Zombie(name);	// 2. Creamos un Zombie en el heap usando el constructor con parámetro
+
+    return zombiePtr;				// 3. Devolvemos el puntero
 }
