@@ -6,7 +6,7 @@
 /*   By: sergio <sergio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 22:38:22 by sergio            #+#    #+#             */
-/*   Updated: 2025/07/14 22:44:00 by sergio           ###   ########.fr       */
+/*   Updated: 2025/07/14 22:58:48 by sergio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 
 int main(int argc, char** argv)
 {
-    (void) argv;
     if (argc != 4)
     {
         std::cout << RED << "Usage: ./Sed_is_for_losers <filename>" 
@@ -28,10 +27,15 @@ int main(int argc, char** argv)
         << RESET << std::endl;
         return 1;
     }
-    else
-    {
-        std::cout << GREEN << "Continuacion del codigo" << RESET << std::endl;
-    }
+    // Guardamos los argumentos en variables
+    std::string filename = argv[1];
+    std::string s1 = argv[2];
+    std::string s2 = argv[3];
+    // Comprobacion de que todo esta bien guardado
+    std::cout << CYAN << "Filename: " << RESET << filename << std::endl;
+    std::cout << CYAN << "String to replace: " << RESET << s1 << std::endl;
+    std::cout << CYAN << "Replacement string: " << RESET << s2 << std::endl;
+    
     return (0);
 }
 
