@@ -6,7 +6,7 @@
 /*   By: sergio <sergio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 11:52:11 by sergio            #+#    #+#             */
-/*   Updated: 2025/07/14 13:57:57 by sergio           ###   ########.fr       */
+/*   Updated: 2025/07/14 14:33:37 by sergio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@
 # define MAGENTA "\033[35m"
 # define GREEN "\033[32m"
 # define RESET "\033[0m"
+
 # include <iostream>
+
 class Weapon
 {
 private:
