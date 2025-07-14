@@ -6,8 +6,13 @@
 /*   By: sergio <sergio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 01:21:15 by sergio            #+#    #+#             */
-/*   Updated: 2025/07/14 01:22:32 by sergio           ###   ########.fr       */
+/*   Updated: 2025/07/14 08:17:13 by sergio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/Zombie.h"
+#include "../include/Zombie.hpp"
+
+Zombie* zombieHorde(int N, std::string name)
+{
+    
+}

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.h                                           :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sergio <sergio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 01:10:41 by sergio            #+#    #+#             */
-/*   Updated: 2025/07/14 07:49:14 by sergio           ###   ########.fr       */
+/*   Updated: 2025/07/14 09:31:51 by sergio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,17 @@
 # include <iostream>
 # include <cstdlib>
 
+class Zombie
+{
+    private:
+        std::string _name;
+        Zombie();
+    public:
+        Zombie(std::string name);
+        ~Zombie();
+        void announce();
+};
 
+Zombie* zombieHorde(int N, std::string name);
 
 #endif // ZOMBIE_HPP
