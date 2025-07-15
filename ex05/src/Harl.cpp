@@ -6,7 +6,7 @@
 /*   By: sergio <sergio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 12:35:29 by sergio            #+#    #+#             */
-/*   Updated: 2025/07/15 22:17:30 by sergio           ###   ########.fr       */
+/*   Updated: 2025/07/15 22:23:41 by sergio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,6 @@ void Harl::complain(std::string level)
             (this->*actions[i])();
         }
     }
+    std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+
 }
