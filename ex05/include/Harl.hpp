@@ -6,12 +6,32 @@
 /*   By: sergio <sergio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 12:35:25 by sergio            #+#    #+#             */
-/*   Updated: 2025/07/15 12:35:26 by sergio           ###   ########.fr       */
+/*   Updated: 2025/07/15 22:20:24 by sergio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HARL_HPP
 # define HARL_HPP
+
+#define GREEN "\033[32m"
+#define CYAN "\033[36m"
+#define RED "\033[31m"
+#define MAGENTA "\033[35m"
+#define RESET "\033[0m"
+
+# include <iostream>
+class Harl
+{
+    private:
+        void debug(void);
+        void info(void);
+        void warning(void);
+        void error(void);
+    public:
+        void complain(std::string level);
+};
+
+
 
 
 #endif // HARL_HPP
