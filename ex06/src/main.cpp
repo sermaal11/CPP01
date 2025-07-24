@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sergio <sergio@student.42.fr>              +#+  +:+       +#+        */
+/*   By: smarin-a <smarin-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 23:27:27 by sergio            #+#    #+#             */
-/*   Updated: 2025/07/16 13:35:24 by sergio           ###   ########.fr       */
+/*   Updated: 2025/07/24 13:33:21 by smarin-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,24 @@ int main(int argc, char **argv)
         }
     }
     Harl harl;
-    switch (index)
+    if (index == -1)
     {
-        case 0: harl.complain("DEBUG");
-        case 1: harl.complain("INFO");
-        case 2: harl.complain("WARNING");
-        case 3: harl.complain("ERROR");
-            break;
-        default:
-            std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+        std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+        return 1;
+    }
+    else
+    {
+        switch (index)
+        {
+            case 0: harl.complain("DEBUG");
+                // fall through
+            case 1: harl.complain("INFO");
+                // fall through
+            case 2: harl.complain("WARNING");
+                // fall through
+            case 3: harl.complain("ERROR");
+                break;
+        }
     }
     return (0);
 }
