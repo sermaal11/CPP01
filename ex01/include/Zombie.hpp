@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sergio <sergio@student.42.fr>              +#+  +:+       +#+        */
+/*   By: smarin-a <smarin-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 01:10:41 by sergio            #+#    #+#             */
-/*   Updated: 2025/07/14 10:04:30 by sergio           ###   ########.fr       */
+/*   Updated: 2025/07/24 12:07:37 by smarin-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,13 @@
 # define GREEN "\033[32m"
 # define RESET "\033[0m"
 
+// MAX_ZOMBIES //
+# define MAX_ZOMBIES 500000
+
 // HEADERS //
 # include <iostream>
 # include <cstdlib>
+# include <climits>
 
 class Zombie
 {

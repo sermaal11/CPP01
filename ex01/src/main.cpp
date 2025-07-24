@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sergio <sergio@student.42.fr>              +#+  +:+       +#+        */
+/*   By: smarin-a <smarin-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 01:10:25 by sergio            #+#    #+#             */
-/*   Updated: 2025/07/14 10:16:20 by sergio           ###   ########.fr       */
+/*   Updated: 2025/07/24 12:08:17 by smarin-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ int main(int argc, char **argv)
         << RESET << std::endl;
         return 1;
     }
-    int zAmmount;
-    zAmmount = std::atoi(argv[1]);
-    if (zAmmount < 1)
+    long zAmmount;
+    zAmmount = std::atol(argv[1]);
+    if (zAmmount < 1 || zAmmount > INT_MAX || zAmmount < INT_MIN)
     {
         std::cout << RED << " - Please enter a positive number of zombies - " << RESET << std::endl;
         return 1;
@@ -34,6 +34,6 @@ int main(int argc, char **argv)
     for (int i = 0; i < zAmmount; i++)
         horde[i].announce();
     delete[] horde;
-    horde = nullptr;
+    horde = NULL;
     return (0);
 }

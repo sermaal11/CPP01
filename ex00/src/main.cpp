@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sergio <sergio@student.42.fr>              +#+  +:+       +#+        */
+/*   By: smarin-a <smarin-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 13:06:34 by sergio            #+#    #+#             */
-/*   Updated: 2025/07/14 01:01:56 by sergio           ###   ########.fr       */
+/*   Updated: 2025/07/24 11:43:40 by smarin-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Zombie.hpp"
 
-int main(int argc, char **argv)
+int main(void)
 {
     std::cout << CYAN << "== Zombien en el HEAP ==" << RESET << std::endl;
     Zombie* heapZombie;
